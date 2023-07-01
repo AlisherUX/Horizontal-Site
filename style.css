@@ -1,0 +1,60 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+}
+
+.container {
+  width: 100vh;
+  height: 100vw;
+  transform-origin: top left;
+  transform: rotate(-90deg) translateX(-100vh);
+  overflow-y: scroll;
+  position: absolute;
+  overflow-x: hidden;
+}
+
+ .wrapper {
+  display: flex;
+  width: 300vw;
+  transform-origin: top left;
+  transform: rotate(90deg) translateY(-100vh);
+}
+
+.slide {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 120px;
+}
+
+.one {
+  background-color: black;
+}
+
+.two {
+  background-color: white;
+}
+
+.three {
+  background-color: black;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.text{
+    mix-blend-mode: difference;
+    color: #fff;
+    position: fixed;
+    margin-left: 26%;
+    margin-top: 20%;
+    text-align: center;
+    z-index: 10;
+    font-size: 120px;
+}
